@@ -1,0 +1,51 @@
+.stats {
+    &__container {
+        min-height: 95px;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin: -33px;
+        @include respond-below(md) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+    &__num {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 42px;
+        color: #2596D9;
+        float: left;
+        margin: 0 15px 0 0;
+        @include respond-below(md_plus) {
+            display: block;
+            float: none;
+            text-align: center;
+        }
+    }
+    &__txt {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #000000;
+        @include respond-below(md_plus) {
+            display: block;
+            text-align: center;
+        }
+    }
+    &__item {
+        padding: 20px 0;
+        margin: 33px;
+        @include respond-below(md) {
+            width: calc(100% / 3);
+        }
+        @include respond-below(xs) {
+            width: 100%;
+        }
+    }
+}

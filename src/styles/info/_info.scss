@@ -1,0 +1,113 @@
+    .telegr {
+        background-color: #0088CC;
+        padding: 4px;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+    
+    .info {
+        &__title {
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 41px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #000000;
+            @include respond-below(md) {
+                width: 70px;
+                font-size: 30px;
+            }
+            @include respond-below(sm) {
+                text-align: center;
+                width: 100%;
+                font-size: 25px;
+            }
+            @include respond-below(xs) {
+                padding: 20px 60px;
+            }
+        }
+        &__content {
+            @include respond-below(md) {
+                padding-left: 30px;
+            }
+            @include respond-below(sm) {
+                display: block;
+                text-align: center;
+                // width: 100%;
+                // font-size: 25px;
+            }
+        }
+        &__subscribe {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            /* or 175% */
+            color: #747474;
+        }
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 80px;
+            @include respond-below(md) {
+                padding: 20px;
+                justify-content: space-around;
+            }
+            @include respond-below(sm) {
+                display: block;
+            }
+        }
+        &__img {
+            @include respond-below(md) {
+                width: 250px;
+                height: 300px;
+                padding-top: 50px;
+            }
+            @include respond-below(sm) {
+                width: 500px;
+                height: 600px;
+            }
+            @include respond-below(xs) {
+                width: 250px;
+                height: 300px;
+            }
+        }
+    }
+    
+    .info__item {
+        padding: 20px 0;
+        @include respond-below(sm) {
+            padding: 0;
+        }
+    }
+    
+    .link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    .fb,
+    .tw,
+    .youtube,
+    .tg {
+        font-weight: bold;
+        font-size: 13px;
+        padding: 18px;
+    }
+    
+    .fb {
+        color: #3B5998;
+    }
+    
+    .tw {
+        color: #1DA1F2;
+    }
+    
+    .youtube {
+        color: #B52121;
+    }
+    
+    .tg {
+        color: #0088CC;
+    }

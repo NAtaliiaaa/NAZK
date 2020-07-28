@@ -10,13 +10,29 @@
         <title>{{ title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <link rel="stylesheet" href="../styles/main.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
+    {# {% include "src/blocks/modules/footer/footer.njk" %} #}
         {% include "parts/header.njk" %}
+        {% include "parts/stats.njk" %}
+{% include "parts/article.njk" %} 
+
+        {% include "parts/services.njk" %}
+        {% include "parts/search.njk" %}
+         {% include "parts/discussion.njk" %}
+        {% include "parts/info.njk" %} 
+        {% include "parts/footer.njk" %} 
+        
+         <script src="../js/main.js"></script>
         <main>
-            {% block content %}{% endblock %}
+            {% block content %}
+            {# hello #}
+            {% endblock %}
         </main>
-        {% include "parts/footer.njk" %}
-        <script src="../js/main.js"></script>
+        
+       
+      
     </body>
 </html>

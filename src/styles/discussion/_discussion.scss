@@ -1,0 +1,90 @@
+.discussion {
+    &__container {
+        background: linear-gradient(180deg, #FBFBFB 0%, #F8F7F7 100%);
+        padding: 40px;
+        @include respond-below(sm) {
+            display: block;
+            text-align: center;
+        }
+    }
+    &__line {
+        border-left: 4px solid #FFF84C;
+        padding: 5px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 28px;
+        color: #234260;
+        @include respond-below(md) {
+            font-size: 26px;
+        }
+        @include respond-below(sm) {
+            font-size: 22px;
+        }
+        @include respond-below(xs) {
+            font-size: 20px;
+        }
+    }
+    &__title:hover {
+        color: #044074;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    &__list {
+        display: flex;
+        @include respond-below(sm) {
+            display: block;
+        }
+    }
+    &__item {
+        @include respond-below(sm) {
+            padding-bottom: 50px;
+        }
+    }
+    &__date {
+        font-size: 14px;
+        color: #9D9D9D;
+    }
+    &__info {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #234260;
+        @include respond-below(sm) {
+            padding: 20px;
+        }
+    }
+    &__info:hover {
+        color: #044074;
+        // cursor: pointer;
+    }
+    &__appeal {
+        background: #E0F0FF;
+        border-radius: 12px;
+        font-size: 16px;
+        line-height: 22px;
+        /* or 137% */
+        color: #234260;
+        padding: 17px;
+    }
+    &__appeal:hover {
+        background: #FFD72F;
+    }
+}
+
+.appeal__list {
+    padding-top: 20px;
+}
+
+.appeal__item {
+    padding: 7.5px;
+}
+
+.discuss__info {
+    padding-top: 40px;
+    padding-right: 150px;
+    @include respond-below(sm) {
+        padding-top: 0;
+        padding-right: 0;
+    }
+}

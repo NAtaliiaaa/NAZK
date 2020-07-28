@@ -1,18 +1,37 @@
-@import 'helpers/variables';
-@import 'helpers/mixins';
-@import 'helpers/functions';
 @import 'vendor/libs';
-@import 'base/fonts';
 @import 'base/general';
-@import '../blocks/components/components';
-@import '../blocks/modules/modules';
+@import 'header/header';
+@import 'stats/stats';
+@import 'article/article';
+@import 'services/services';
+@import 'search/search';
+@import 'discussion/discussion';
+@import 'footer/footer';
+@import 'info/info';
+@import 'nav/nav';
+main {}
 
-main {
-  display: flex;
-  justify-content: space-around;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    @include respond-below(md_plus) {
+        max-width: 1080px;
+        // margin: 0 auto;
+    }
+    @include respond-below(md) {
+        max-width: 970px;
+    }
+    @include respond-below(sm) {
+        max-width: 768px;
+    }
+    @include respond-below(xs) {
+        max-width: 460px;
+    }
 }
 
-.shop-list {
-  background-color: rgb(228, 228, 228);
-  padding: 40px;
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
 }

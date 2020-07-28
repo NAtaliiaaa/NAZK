@@ -1,0 +1,108 @@
+.services {
+    &__container {
+        border-left: 3px solid #2596D9;
+        padding-left: 40px;
+    }
+    &__head {
+        font-weight: bold;
+        font-size: 42px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 42px;
+        @include respond-below(md) {
+            font-size: 37px;
+        }
+        @include respond-below(sm) {
+            font-size: 30px;
+        }
+    }
+    &__head:hover {
+        color: #0c1e2e;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    &__list {
+        padding-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+        @include respond-below(sm) {
+            display: block;
+            text-align: center;
+        }
+    }
+    &__item {
+        width: calc(100% / 2 - 60px);
+        margin: 20px 30px;
+        @include respond-below(sm) {
+            width: calc(100% / 1 - 60px);
+        }
+    }
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 36px;
+        color: #000000;
+        text-decoration: none;
+        // 
+    }
+    &__title:hover {
+        color: #044074;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    &__info {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #565656;
+        // padding: 0 30px;
+    }
+}
+
+.radio-btn {
+    display: inline;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    @include respond-below(xs) {
+        display: block;
+        text-align: center;
+    }
+}
+
+.radio {
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+#myInput {
+    width: 578px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #B4B4B4;
+    padding: 24px;
+    background: #F3F3F3;
+    border-radius: 8px;
+    border: none;
+    margin: 30px 0;
+    @include respond-below(md) {
+        width: 478px;
+    }
+    @include respond-below(sm) {
+        width: 378px;
+    }
+    @include respond-below(xs) {
+        width: 278px;
+    }
+}
+
+#myUL {
+    display: none;
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

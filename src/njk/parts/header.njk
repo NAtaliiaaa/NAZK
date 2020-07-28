@@ -1,4 +1,59 @@
-<header>
-    <span>LOGO</span>
-    {% include "parts/navigation.njk" %}
+<header class="header" ref="header">
+       <div class="container">
+        <div class="header__container">
+      {# <div class="mobile-container"> #}
+          
+  <div id="menuToggle" class="burger__menu" >  
+  <div id="burgerMenu" class="menuToggle container__bar">
+        <div id="bar1Id" class="bar1"></div>
+        <div id="bar2Id" class="bar2"></div>
+        <div id="bar3Id" class="bar3"></div>
+</div>   </div>
+    <nav role="navigation">
+ 
+  
+        <ul id="menu" >
+ {% include "parts/navigation.njk" %}
+       
+        </ul> 
+
+     
+    </nav>
+{# </div>  #}
+
+ <div class="wrapper">
+  <div class="item">
+   <div class="header__menu">Меню</div>
+   {# <button onclick="g">djkfhksckjsndkcjscnk</button> #}
+  
+  </div>
+
+  <div class="item">
+    <div class="header__wrap">
+   <div class="header__entxt">National agency on corruption prevention</div>
+            <a href="/">
+              <div>
+                <img class="logo" src="../img/logo.png" alt="" />
+              </div>
+            </a>
+            <div class="header__uatxt">Національне агенство з питань запобігання корупції</div>
+            </div>
+  </div>
+  <div class="item ">
+  <div class=" section_itm">
+    <div class="language">Укр</div>
+      <div id="wrap">
+        <form action="" autocomplete="on">
+        <input id="search" name="search" type="text" placeholder="Що шукаєте?">
+        <input id="search_submit" value=" " type="submit">
+        </form>
+      </div>     
+    </div>
+  </div>
+</div>
+       
+     
+    </div> 
+    
+       </div>
 </header>

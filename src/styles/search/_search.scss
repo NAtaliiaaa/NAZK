@@ -1,0 +1,104 @@
+.search {
+    &__container {
+        background: radial-gradient(50.42% 2051.37% at 49.58% 29.62%, #2394D8 0%, #47B1F0 100%);
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        min-height: 254px;
+        padding: 35px 0 0 43px;
+        @include respond-below(sm) {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    }
+    &__img {
+        position: absolute;
+        right: 15%;
+    }
+    &__head {
+        font-weight: bold;
+        font-size: 24px;
+        letter-spacing: 1px;
+        color: #FFF84C;
+    }
+    &__info {
+        font-size: 16px;
+        color: #FFFFFF;
+        padding: 10px 0;
+    }
+    &__content {
+        display: flex;
+        @include respond-below(sm) {
+            flex-direction: column;
+        }
+    }
+    &__inp,
+    &__input {
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 6px;
+        height: 42px;
+    }
+    &__inp {
+        background-image: url(../img/search.png);
+        background-position: 10px;
+        width: 749px;
+        @include respond-below(lg) {
+            width: 647px;
+        }
+        @include respond-below(md_plus) {
+            width: 547px;
+        }
+        @include respond-below(md) {
+            width: 347px;
+        }
+        @include respond-below(sm) {
+            width: 347px;
+        }
+    }
+    &__input {
+        background-image: url(../img/st.png);
+        background-position: 320px;
+        width: 347px;
+        text-indent: 15px;
+    }
+    &__item {
+        margin-left: 20px;
+        @include respond-below(sm) {
+            margin-left: 0;
+        }
+    }
+    &__nav {
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        align-items: center;
+        @include respond-below(sm) {
+            display: block;
+        }
+    }
+    &__btn {
+        padding: 15px 60px;
+        background: #FFF84C;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        color: #000000;
+        border: none;
+    }
+    &__txt {
+        font-size: 16px;
+        color: #FFFFFF;
+        padding: 30px;
+        @include respond-below(sm) {
+            display: block;
+            padding: 10px;
+        }
+    }
+    &__link {
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+    }
+}
